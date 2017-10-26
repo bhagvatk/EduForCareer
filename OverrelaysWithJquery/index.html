@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<!--
+	Read Only by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Read Only by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"> -->
+		<link rel="stylesheet" href="css/main.css"/>
+		<link rel="stylesheet" href="css/style.css"/>
+		<link rel="stylesheet" href="css/reset.css"/>
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+		<div class="container">
+			<button class="btn" >SignUp</button>
+			  <div class="popup"> 
+			   <div class="container">
+			  	<span id="close">&times;</span>
+			  	  <h3 style="font-size: 27px;font-weight: bolder;padding: 20px;">SignUp</h3>
+			  	  <div id="cd-login" class="is-selected"> <!-- log in form -->
+				    <form class="cd-form">
+						<p class="fieldset">
+							<label class="image-replace cd-email" for="signin-email">E-mail</label>
+							<input class="full-width has-padding has-border" id="signin-email" placeholder="E-mail" type="email">
+					
+					    </p>
+
+						<p class="fieldset">
+							<label class="image-replace cd-password" for="signin-password">Password</label>
+							<input class="full-width has-padding has-border" id="signin-password" placeholder="Password" type="text">
+							<a href="#0" class="hide-password">Hide</a>
+							<span class="cd-error-message">Error message here!</span>
+						</p>
+
+						<p class="fieldset">
+							<input id="remember-me" checked="" type="checkbox">
+							<label for="remember-me">Remember me</label>
+						</p>
+
+						<p class="fieldset">
+							<input class="full-width" value="Login" type="submit">
+						</p>
+					</form>
+				<!-- <a href="#0" class="cd-close-form">Close</a> -->
+			     </div>
+			  	
+			  </div>
+			</div>
+			</div>
+			<div class="cover">
+
+			</div>
+			<script src="js/jquery.js"></script>
+			<script type="text/javascript">
+             $(document).ready(function(){
+             	$(".btn").on('click' , function(){
+             		//alert("hi")
+             		$(".cover").fadeIn('slow');
+             		$(".popup").fadeIn('slow');
+             	});
+             	$(".popup").on('click' , function(){
+             		if($(event.target).is("#close")){
+             			$(".cover").fadeOut('slow');
+             		    $(".popup").fadeOut('slow');
+             		    evt.preventDefault();
+             		}
+             		
+             	});
+             });
+
+
+			</script>
+		
+	</body>
+	
+</html>
